@@ -3,8 +3,9 @@
     --color-secondary : #00d9ff;
     --color-accent : #ff3400;
     --color-heading : #1b0760;
-    --color-body : 
-    #9186a4;
+    --color-body :#9186a4; 
+    --color-border :#ccc;
+    --border-radius : 30px;
 }
 
 *, *::after, *::before{
@@ -196,7 +197,44 @@ a{
     }
 }
 
-
+/*Input*/
+.input{
+    border-radius: 30px;
+    padding: 1.5rem 3.5rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    color: var(--color-heading);
+    font-size: 2rem;
+}
+::placeholder{
+    font-size: 2.5rem;
+    color: #cdcbd7;
+}
+.input-group{
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+}
+.input-group .input{
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+} 
+.input-group .btn{
+    margin:4px;
+} 
+.input-group{
+    justify-items: row-reverse;
+}
+@media screen and (min-width: 1024px){
+    .input{
+        font-size: 1.5rem;
+    }
+    .btn--primary{
+        font-size: 20px;
+    }
+}
 
 
 
