@@ -499,7 +499,7 @@ a {
   border-radius: 5px;
 }
 .callout--primary {
-  background: var(--color-primary);
+  background: var(--color-accent);
   color: #fff;
 }
 .callout__heading {
